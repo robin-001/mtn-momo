@@ -1,0 +1,25 @@
+{
+    "name": "angstrom/mtn-momo",
+    "description": "A Laravel package to wrap MTN MoMo API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "YourVendor\\MoMo\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Angstrom\\MoMo\\MoMoServiceProvider"
+            ],
+            "aliases": {
+                "MoMo": "Angstrom\\MoMo\\Facades\\MoMo"
+            }
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    }
+}
