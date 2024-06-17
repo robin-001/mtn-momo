@@ -1,3 +1,4 @@
+<?php
 return [
     'api_key' => env('MOMO_API_KEY'),
     'api_user' => env('MOMO_API_USER'),

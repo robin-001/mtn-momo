@@ -1,3 +1,4 @@
+<?php
 namespace Angstrom\MoMo;
 
 use Illuminate\Support\ServiceProvider;

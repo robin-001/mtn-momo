@@ -1,3 +1,4 @@
+<?php
 namespace Angstrom\MoMo\Facades;
 
 use Illuminate\Support\Facades\Facade;
