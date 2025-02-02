@@ -19,6 +19,15 @@ class MoMoClient
         $this->apiBaseUrl = config('momo.api_base_url');
     }
 
+    /**
+     * Set HTTP client (for testing purposes)
+     */
+    public function setHttpClient(Client $client)
+    {
+        $this->client = $client;
+        return $this;
+    }
+
     public function getToken()
     {
         if (Cache::has('momo_token')) {
